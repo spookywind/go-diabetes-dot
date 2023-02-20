@@ -6,7 +6,15 @@ import (
 )
 
 var MY_HTML string = `
-HELLO WORLD
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is Hello HTML page</title>
+</head>
+<body>
+ 	<h1>Hello HTML!</h1>
+</body>
+</html>
 `
 
 func Run() {
