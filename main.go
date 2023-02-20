@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"go-diabetes-dot/app"
 )
 
 func main() {
-	fmt.Println("Hello World!")
+	app.Test()
 }
