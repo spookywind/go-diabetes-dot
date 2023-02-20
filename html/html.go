@@ -1,13 +1,25 @@
 package html
 
-var MY_HTML string = `
+import "strings"
+
+var MY_HTML = `
 <!DOCTYPE html>
 <html>
 <head>
-	<title>This is Hello HTML page</title>
+	<title>Go Diabetes Dot</title>
 </head>
 <body>
- 	<h1>Hello HTML 2!</h1>
+$CONTENTS$
 </body>
 </html>
 `
+
+var CONTENTS = `
+MY CONTENTS
+`
+
+func Html() string {
+	replacer := strings.NewReplacer("$CONTENTS$", CONTENTS)
+	html := replacer.Replace(MY_HTML)
+	return html
+}

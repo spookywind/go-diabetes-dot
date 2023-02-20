@@ -16,5 +16,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	case "GET":
 		fmt.Println("GET")
 	}
-	fmt.Fprintf(w, "%s\n", html.MY_HTML)
+	fmt.Fprintf(w, "%s\n", html.Html())
 }
