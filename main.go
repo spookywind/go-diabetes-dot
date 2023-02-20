@@ -6,4 +6,5 @@ import (
 
 func main() {
 	app.Test()
+	app.Run()
 }

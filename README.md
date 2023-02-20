@@ -5,6 +5,9 @@
   * predicting what my long-term future weight would be based on daily impact of food and exercise (using Rosati's equation)
   * contain additional helpful info - e.g. calculate what my A1C would be if I ate yesterday's diet every day
   
+## To Run
+* http://localhost:8080/go-diabetes-dot 
+
 ## Estimated future weight
 * from https://www.aarp.org/health/fitness/info-07-2010/How_Many_Calories_Do_I_Need.html 
 * from Rosati: estimated_future_weight = calories / 10
