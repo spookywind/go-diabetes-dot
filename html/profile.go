@@ -1,5 +1,3 @@
 package html
 
-var ProfileSection = `
-MY PROFILE
-`
+var ProfileSection = h1("Profile")

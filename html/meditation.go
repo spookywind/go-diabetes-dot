@@ -1,5 +1,3 @@
 package html
 
-var MeditationSection = `
-MY MEDITATION
-`
+var MeditationSection = h1("Meditation")

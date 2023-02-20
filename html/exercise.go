@@ -1,5 +1,3 @@
 package html
 
-var ExerciseSection = `
-MY EXERCISE
-`
+var ExerciseSection = h1("Exercise")

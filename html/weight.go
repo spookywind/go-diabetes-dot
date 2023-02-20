@@ -1,5 +1,3 @@
 package html
 
-var WeightSection = `
-MY WEIGHT
-`
+var WeightSection = h1("Weight")

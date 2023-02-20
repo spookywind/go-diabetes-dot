@@ -1,5 +1,3 @@
 package html
 
-var FoodsSection = `
-MY FOODS
-`
+var FoodsSection = h1("Foods")
