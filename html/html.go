@@ -27,31 +27,11 @@ $MEDITATION-SECTION$
 </section>
 
 <section>
-$FUTURE-WEIGHT-SECTION$
+$WEIGHT-SECTION$
 </section>
 
 </body>
 </html>
-`
-
-var ProfileSection = `
-MY PROFILE SECTION
-`
-
-var FoodsSection = `
-MY FOODS SECTION
-`
-
-var ExerciseSection = `
-MY EXERCISE SECTION
-`
-
-var MeditationSection = `
-MY MEDITATION SECTION
-`
-
-var FutureWeightSection = `
-MY FUTURE WEIGHT SECTION
 `
 
 func Html() string {
@@ -60,7 +40,7 @@ func Html() string {
 		"$FOODS-SECTION$", FoodsSection,
 		"$EXERCISE-SECTION$", ExerciseSection,
 		"$MEDITATION-SECTION$", MeditationSection,
-		"$FUTURE-WEIGHT-SECTION$", FutureWeightSection,
+		"$WEIGHT-SECTION$", WeightSection,
 	)
 	html := replacer.Replace(MY_HTML)
 	return html
