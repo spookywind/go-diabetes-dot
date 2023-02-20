@@ -2,20 +2,9 @@ package app
 
 import (
 	"fmt"
+	"go-diabetes-dot/html"
 	"net/http"
 )
-
-var MY_HTML string = `
-<!DOCTYPE html>
-<html>
-<head>
-	<title>This is Hello HTML page</title>
-</head>
-<body>
- 	<h1>Hello HTML!</h1>
-</body>
-</html>
-`
 
 func Run() {
 	http.HandleFunc("/go-diabetes-dot", handler)
@@ -27,5 +16,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	case "GET":
 		fmt.Println("GET")
 	}
-	fmt.Fprintf(w, "%s\n", MY_HTML)
+	fmt.Fprintf(w, "%s\n", html.MY_HTML)
 }
