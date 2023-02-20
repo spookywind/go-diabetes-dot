@@ -9,17 +9,50 @@ var MY_HTML = `
 	<title>Go Diabetes Dot</title>
 </head>
 <body>
-$CONTENTS$
+
+<section>
+$PROFILE-SECTION$
+</section>
+
+<section>
+$FOODS-SECTION$
+</section>
+
+<section>
+$EXERCISE-SECTION$
+</section>
+
+<section>
+$FUTURE-WEIGHT-SECTION$
+</section>
+
 </body>
 </html>
 `
 
-var CONTENTS = `
-MY CONTENTS
+var ProfileSection = `
+MY PROFILE SECTION
+`
+
+var FoodsSection = `
+MY FOODS SECTION
+`
+
+var ExerciseSection = `
+MY EXERCISE SECTION
+`
+
+var FutureWeightSection = `
+MY FUTURE WEIGHT SECTION
 `
 
 func Html() string {
-	replacer := strings.NewReplacer("$CONTENTS$", CONTENTS)
+	replacer := strings.NewReplacer(
+		"$PROFILE-SECTION$", ProfileSection,
+		"$FOODS-SECTION$", FoodsSection,
+		"$EXERCISE-SECTION$", ExerciseSection,
+		"$FUTURE-WEIGHT-SECTION$", FutureWeightSection,
+	)
 	html := replacer.Replace(MY_HTML)
 	return html
 }
